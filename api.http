@@ -2,17 +2,74 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Usuário Indicado 3",
-    "email": "indicado3@gmail.com",
-    "referrer": "35f98f08-7f44-43a5-bf3a-89160ff4a412"
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
 }
 
 ###
-GET http://localhost:3333/invites/69c49aa3-cb99-4651-acac-7489c85149a9
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
+}
+
+###
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
+}
+
+###
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
+}
+
+###
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Ethan Hunt",
+    "email": "ethan.hunt@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
+}
+
+###
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Fiona Gallagher",
+    "email": "fiona.gallagher@example.com",
+    "referrer": "a81da906-f65c-4a8d-b99e-bf9ea85954fd"
+}
+###
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+    "message": "Quais os e-mails dos usuários cadastrados em minha aplicação?"
+}
+
+###
+GET http://localhost:3333/invites/a81da906-f65c-4a8d-b99e-bf9ea85954fd
 
 ###
 
-GET http://localhost:3333/subscribers/69c49aa3-cb99-4651-acac-7489c85149a9/ranking/clicks
+GET http://localhost:3333/subscribers/a81da906-f65c-4a8d-b99e-bf9ea85954fdb/ranking/clicks
 
 ###
 GET http://localhost:3333/subscribers/69c49aa3-cb99-4651-acac-7489c85149a9/ranking/count
